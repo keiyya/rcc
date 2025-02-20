@@ -57,7 +57,9 @@ function App() {
 }
 
 function Header() {
-  return <h1>Fast React Pizza Co.</h1>;
+  const style = { color: "red", fontSize: "36px", textTransform: "uppercase" };
+
+  return <h1 style={style}>Fast React Pizza Co.</h1>;
 }
 
 function Menu() {
@@ -82,7 +84,9 @@ function Footer() {
   // else alert("Sorry we're closed");
 
   // return React.createElement("footer", null, "We're currently open");
-  return <footer>{new Date().toLocaleTimeString()}We're currently open</footer>;
+  return (
+    <footer>{new Date().toLocaleTimeString()} We're currently open</footer>
+  );
 }
 
 function Pizza() {
